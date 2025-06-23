@@ -13,7 +13,7 @@ else:
     import streamer, log_conf
 
 app = Flask( __name__)
-st = streamer.Streamer(width = 640, height = 480, mode = 0, stat = False)
+st = streamer.Streamer(width = 480, height = 640, mode = 0, stat = False)
 clients = 0
 
 @app.route('/')
@@ -27,7 +27,7 @@ def index():
     <body>
     <meta charset="utf-8">
     <h1>와이프가 지켜보고있다!</h1>
-    <img src="/stream" width="640" height="480">
+    <img src="/stream" width="480" height="640">
     </body>
     </html>
     """
